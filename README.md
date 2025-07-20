@@ -14,11 +14,14 @@ This module (`chroma_db`) is part of the larger **[RAG-Finetuning-LLAMA-Model](h
 ## 📁 Folder Structure
 
 ```
-chroma_db/
-├── output.txt               # Scraped markdown content from haznain.com
-├── chroma/                  # Persisted vectorstore directory
-├── rag_qa_pipeline.py       # Main script to run RAG QA
-└── README.md                # You're here!
+RAG-Finetuning-LLAMA-Model/
+├── chroma_db/                  # Persisted Chroma vector store
+├── output.txt                  # Extracted markdown content
+├── main.py                     # RAG pipeline entry point
+├── crawler.py                  # Async crawler script
+├── requirements.txt            # All pip dependencies
+├── README.md                   # Project documentation
+└── utils/                      # (Optional) helper modules
 ```
 
 ---
@@ -52,7 +55,7 @@ You will also need:
 ## 🚀 How to Run
 
 ```bash
-python rag_qa_pipeline.py
+python main.py
 ```
 
 It will:
